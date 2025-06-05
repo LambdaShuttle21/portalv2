@@ -84,27 +84,29 @@ public abstract class Evento {
     }
 
     //metodos
-    // Método mejorado para inscripción de usuario
+    
     public void inscribirUsuario(Participante participante) {
         if (inscritos == null) {
             inscritos = new Inscripcion[0];//correccion de bug al no inicializar el array
         }
 
-        // Validamos que el usuario no se encuentre en el array
+        // Validamos que el usuario no se encuentre en el array con nuestro booleano
         boolean inscrito = false;
-        for (Inscripcion inscripcion : inscritos) {
-            if (inscripcion.getUsuario().equals(participante)) {
-                System.out.println(participante.getNombre() + " ya está inscrito en: " + nombre);
-                inscrito = true;
-                break;
-            }
-        }
+        for (int i = 0; i < inscritos.length; i++) {
+        Inscripcion inscripcion = inscritos[i];
+        if (inscripcion.getUsuario().equals(participante)) {
+        System.out.println(participante.getNombre() + " ya está inscrito en: " + nombre);
+        inscrito = true;
+        break;
+    }
+}
 
-        // Si no está inscrito, lo aniadimos
+        //Si no, lo aniadimos
         if (!inscrito) {
             System.out.println("Usuario no encontrado, se procede a inscribir a " + participante.getNombre());
             Inscripcion nuevaInscripcion = new Inscripcion(participante, this);
 
+            //redimension manual del array
             Inscripcion[] copiaInscritos = Arrays.copyOf(inscritos, inscritos.length + 1);
             copiaInscritos[copiaInscritos.length - 1] = nuevaInscripcion;
             inscritos = copiaInscritos;
