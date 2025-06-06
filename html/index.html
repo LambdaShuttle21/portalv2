@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+     <header class="header">
+            <img src="images/logo.png" id="logotipo">
+            <h1>Go Green</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Informacion</a></li>
+                    <li><a href="index.html">Eventos</a></li>
+                    <li><a href="index.html">Organizaciones</a></li>
+                </ul>
+            </nav>
+            <a href="signup.html" class="login-link">
+                <img src="images/sign in.png" alt="Iniciar sesion">
+                <span>Iniciar Sesion</span>
+            </a>
+    </header>
+
+<section id="carousel-section">
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-item">
+            <img src="images/renovable.jpg" alt="Imagen 1">
+             <p class="carousel-title">Hackatón Verde - 15 de mayo</p>
+        </div>
+        <div class="carousel-item">
+            <img src="images/conferencia.jpg" alt="Imagen 2">
+            <p class="carousel-title">Feria de Consumo Responsable - 20 de junio</p>
+        </div>
+        <div class="carousel-item">
+            <img src="images/soluciontecnologica.jpg" alt="Imagen 3">
+            <p class="carousel-title">Conferencia de Energías Renovables - 10 de julio</p>
+        </div>
+    </div>
+    <div class="buttons">
+        <button onclick="prevSlide()" aria-label="Imagen anterior">❮</button>
+        <button onclick="nextSlide()" aria-label="Imagen siguiente">❯</button>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</section>
+
+
+<section class="events">
+    <h2>Listado de Eventos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del evento</th>
+                <th>Fecha</th>
+                <th>Ubicacion</th>
+                <th>Descripcion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="hackaton-verde.html">Hackaton verde</a></td>
+                <td>15 de mayo de 2025</td>
+                <td>Malaga Centro</td>
+                <td>Soluciones tecnológicas</td>
+            </tr>
+            <tr>
+                <td><a href="feria-consumo-responsable.html">Feria de consumo responsable</a></td>
+                <td>20 de junio de 2025</td>
+                <td>Las Lagunas de Mijas</td>
+                <td>Alternativas sostenibles</td>
+            </tr>
+            <tr>
+                <td><a href="#">Conferencia de energias renovables</a></td>
+                <td>10 de julio de 2025</td>
+                <td>Mijas Golf</td>
+                <td>Invita a especialistas en energías</td>
+            </tr>
+            <tr>
+                <td><a href="festival-de-innovacion.html">Festival de innovacion</a></td>
+                <td>10 de julio de 2025</td>
+                <td>Los Boliches</td>
+                <td>Proyectos ecológicos innovadores</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <img src="" alt="">
+    </div>
+</section>
+
+<section class="about-us">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos una comunidad comprometida con el desarrollo sostenible y la innovación ecológica. Organizamos eventos para fomentar el uso responsable de los recursos y promover soluciones tecnológicas que ayuden al planeta.</p>
+        </div>
+        <div class="about-image">
+            <img src="images/team.jpg" alt="Nuestro equipo">
+        </div>
+    </div>
+</section>
+
+
+ <footer class="footer">
+        <section class="footerlogo">
+            <img src="images/logo.png" id="logo">
+        </section>
+        <section class="info">
+            <ul>
+                <li><a href="">Politica de privacidad y directiva de cookies</a></li>
+                <li><a href="">Informacion legal y privacidad</a></li>
+                <li><a href="">Acuerdo de usuario</a></li>
+            </ul>
+        </section>
+        <section class="social-icons">
+            <h4>Conversa con nosotros</h4>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+        </section>
+    </footer>
+</body>
+</html>
